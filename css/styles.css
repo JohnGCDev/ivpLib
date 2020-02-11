@@ -1,0 +1,11 @@
+body {
+  padding: 0px;
+  z-index: 0; }
+
+.nav-alert-custom {
+  margin-right: -10px;
+  margin-left: -10px; }
+
+.active-custom {
+  margin-right: -2px;
+  margin-left: -10px; }
