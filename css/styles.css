@@ -9,3 +9,30 @@ body {
 .active-custom {
   margin-right: -2px;
   margin-left: -10px; }
+
+#minedu-logo {
+  width: 22%;
+  margin-right: 10%; }
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.primary-color {
+  background-color: #41C7D6; }
+
+.light-color {
+  background-color: #7efaff; }
+
+#container-badge {
+  width: 120px;
+  position: absolute;
+  transform: translate(10px, -4px);
+  border: 6px solid #41C7D6; }
+
+#colegio-logo {
+  width: 80px;
+  height: 81px; }
+
+#fuk {
+  margin-left: 11%; }
