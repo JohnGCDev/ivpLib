@@ -1,1 +1,3 @@
 logo de ivp --> position: absolute & transform: translate
+linea decorativa a la izquierda de cada seccion de la pagina --> usar herramienta bootstrap d-flex, flex-row y flex-grow-1
+imagenes en div se desajustan en pantallas 1024 x 1366 -> !! se debe usar media queries
