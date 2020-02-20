@@ -26,13 +26,16 @@ body {
   background-color: #7efaff; }
 
 .dark-color {
-  background-color: #0096a5; }
+  background-color: #0092C4; }
 
-#search-section-row {
+.page-section-row {
   margin: 0% 6% 0% 3%; }
 
-#search-section {
-  border: 2px solid #0096a5; }
+.page-section {
+  border: 2px solid #0092C4; }
+
+.division {
+  border-top: 2px solid #0092C4; }
 
 #container-badge {
   width: 120px;
@@ -52,3 +55,6 @@ body {
 
 .breadcrumb {
   background-color: #F2F2F2; }
+
+.books-img {
+  width: 175px; }
