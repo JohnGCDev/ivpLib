@@ -28,6 +28,9 @@ body {
 .dark-color {
   background-color: #0092C4; }
 
+.text-pale-color {
+  color: grey; }
+
 .page-section-row {
   margin: 0% 6% 0% 3%; }
 
@@ -58,3 +61,10 @@ body {
 
 .books-img {
   width: 175px; }
+
+footer {
+  color: #F2F2F2; }
+
+.see-img {
+  width: 100%;
+  border: 4px solid grey; }
