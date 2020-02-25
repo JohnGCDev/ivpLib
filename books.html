@@ -144,6 +144,79 @@
             </div>
         </div>
     </div>
+    <!---->
+    <div class="modal fade" id="edit-modal" tabindex="-1" role="dialog" aria-labelledby="EditModal" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">BOOK EDITING</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close Modal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12 col-md-3 align-self-center">
+                            <img class="img-fluid see-img" id="edit-img" alt="Book image">
+                        </div>
+                        <div class="col-12 col-md mt-3 mt-md-0">
+                            <div class="form-group">
+                                <label for="edit-title">Title:</label>
+                                <input type="text" class="form-control" id="edit-title" value="BOOK'S NAME">
+                            </div>
+                            <div class="form-group">
+                                <label for="edit-author">Author:</label>
+                                <input type="text" class="form-control" id="edit-author" value="hii!">
+                            </div>
+                            <div class="form-row">    
+                                <div class="form-group col-md-6">
+                                    <label for="edit-editorial">Editorial:</label>
+                                    <input type="text" class="form-control" id="edit-editorial" value="hii!">
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="edit-edition">Edition:</label>
+                                    <input type="text" class="form-control" id="edit-edition" value="hii!">
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="edit-year">Publication Year:</label>
+                                    <input type="text" class="form-control" id="edit-year" value="hii!">
+                                </div>
+                            </div>
+                            <div class="form-row">    
+                                <div class="form-group col-md-6">
+                                    <label for="edit-copies">Available Copies:</label>
+                                    <input type="text" class="form-control" id="edit-copies" value="hii!">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="edit-isbn">ISBN:</label>
+                                    <input type="text" class="form-control" id="edit-isbn" value="hii!">
+                                </div>
+                            </div>    
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="edit-keywords">Keywords:</label>
+                                    <div id="edit-keywords"></div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="edit-score">Users Score:</label>
+                                    <div>
+                                        <h3>
+                                            <span class="fas fa-star"></span>
+                                            <span class="badge badge-warning ml-3" id="edit-score"></span>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-secondary">Return</button>
+                    <button type="button" data-dismiss="modal" class="btn btn-primary" id="make-edit">Edit Book</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--End MODALS section-->
     <!--Starting Content-->
     <div class="container-fluid">
@@ -222,12 +295,12 @@
                                 <img src="./img/phpbook.jpg" alt="phpbook" class="img-thumbnail books-img">
                             </div>
                             <div class="col-10 col-md-7">
-                                <h3>
+                                <h3 id="b1-title">
                                     <strong>PHP for Absolute Beginners</strong><span class="badge badge-success mx-3">NEW!</span>
                                 </h3>
-                                <p><strong>Author:</strong> Jason Lengstorf</p>
-                                <p><strong>Edition:</strong> 1st</p>
-                                <p><strong>Available copies:</strong> 6</p>
+                                <p id="b1-author"><strong>Author:</strong> Jason Lengstorf</p>
+                                <p id="b1-edition"><strong>Edition:</strong> 1st</p>
+                                <p id="b1-copies"><strong>Available copies:</strong> 6</p>
                                 <div class="d-flex">
                                     <span class="fas fa-star fa-2x" aria-label="one star"></span>
                                     <span class="fas fa-star fa-2x ml-2" aria-label="one star"></span>
@@ -247,7 +320,7 @@
                                         <button type="button" class="btn btn-primary btn-sm m-2 mt-4 reserve-button" data-toggle="modal" data-target="#reserve-modal" idb="b1"><span class="fas fa-book-open"></span> RESERVE COPY</button>
                                     </div>
                                     <div class="d-flex flex-column">
-                                        <button type="button" class="btn btn-primary btn-sm m-2"><span class="fas fa-pencil-alt"></span> EDIT</button>
+                                        <button type="button" class="btn btn-primary btn-sm m-2 edit-button" data-toggle="modal" data-target="#edit-modal" idb="b1"><span class="fas fa-pencil-alt"></span> EDIT</button>
                                         <button type="button" class="btn btn-primary btn-sm m-2 mt-4 delete-button" data-toggle="modal" data-target="#delete-modal" idb="b1"><span class="fas fa-trash-alt"></span> DELETE</button>
                                     </div>
                                 </div>
@@ -258,12 +331,12 @@
                                 <img src="./img/physicsbook.jpg" alt="physicsbook" class="img-thumbnail books-img ">
                             </div>
                             <div class="col-10 col-md-7">
-                                <h3>
+                                <h3 id="b2-title">
                                     <strong>Principles of Physics</strong>
                                 </h3>
-                                <p><strong>Author:</strong> Resnick, Halliday and Jearl Walker</p>
-                                <p><strong>Edition:</strong> 9th</p>
-                                <p><strong>Available copies:</strong> 8</p>
+                                <p id="b2-author"><strong>Author:</strong> Resnick, Halliday and Jearl Walker</p>
+                                <p id="b2-edition"><strong>Edition:</strong> 9th</p>
+                                <p id="b2-copies"><strong>Available copies:</strong> 8</p>
                                 <div class="d-flex">
                                     <span class="fas fa-star fa-2x" aria-label="one star"></span>
                                     <span class="fas fa-star fa-2x ml-2" aria-label="one star"></span>
@@ -279,7 +352,7 @@
                                         <button type="button" class="btn btn-primary btn-sm m-2 mt-4 reserve-button" data-toggle="modal" data-target="#reserve-modal" idb="b2"><span class="fas fa-book-open"></span> RESERVE COPY</button>
                                     </div>
                                     <div class="d-flex flex-column">
-                                        <button type="button" class="btn btn-primary btn-sm m-2"><span class="fas fa-pencil-alt"></span> EDIT</button>
+                                        <button type="button" class="btn btn-primary btn-sm m-2 edit-button" data-toggle="modal" data-target="#edit-modal" idb="b2"><span class="fas fa-pencil-alt"></span> EDIT</button>
                                         <button type="button" class="btn btn-primary btn-sm m-2 mt-4 delete-button" data-toggle="modal" data-target="#delete-modal" idb="b2"><span class="fas fa-trash-alt"></span> DELETE</button>
                                     </div>
                                 </div>
@@ -290,12 +363,12 @@
                                 <img src="./img/lordoftheringsbook.jpg" alt="lordoftheringsbook" class="img-thumbnail books-img ">
                             </div>
                             <div class="col-10 col-md-7">
-                                <h3>
+                                <h3 id="b3-title">
                                     <strong>The Lord of the Rings</strong>
                                 </h3>
-                                <p><strong>Author:</strong> J.R.R. Tolkien</p>
-                                <p><strong>Edition:</strong> One-volume edition</p>
-                                <p><strong>Available copies:</strong> 13</p>
+                                <p id="b3-author"><strong>Author:</strong> J.R.R. Tolkien</p>
+                                <p id="b3-edition"><strong>Edition:</strong> One-volume edition</p>
+                                <p id="b3-copies"><strong>Available copies:</strong> 13</p>
                                 <div class="d-flex">
                                     <span class="fas fa-star fa-2x" aria-label="one star"></span>
                                     <span class="fas fa-star fa-2x ml-2" aria-label="one star"></span>
@@ -311,7 +384,7 @@
                                         <button type="button" class="btn btn-primary btn-sm m-2 mt-4 reserve-button" data-toggle="modal" data-target="#reserve-modal" idb="b3"><span class="fas fa-book-open"></span> RESERVE COPY</button>
                                     </div>
                                     <div class="d-flex flex-column">
-                                        <button type="button" class="btn btn-primary btn-sm m-2"><span class="fas fa-pencil-alt"></span> EDIT</button>
+                                        <button type="button" class="btn btn-primary btn-sm m-2 edit-button" data-toggle="modal" data-target="#edit-modal" idb="b3"><span class="fas fa-pencil-alt"></span> EDIT</button>
                                         <button type="button" class="btn btn-primary btn-sm m-2 mt-4 delete-button" data-toggle="modal" data-target="#delete-modal" idb="b3"><span class="fas fa-trash-alt"></span> DELETE</button>
                                     </div>
                                 </div>
