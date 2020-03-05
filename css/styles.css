@@ -22,6 +22,12 @@ body {
 .primary-color {
   background-color: #41C7D6; }
 
+.two-primary-color-transp {
+  background-color: rgba(79, 194, 247, 0.25); }
+
+.two-primary-color {
+  background-color: #4FC2F7; }
+
 .light-color {
   background-color: #7efaff; }
 
@@ -74,3 +80,18 @@ footer {
 
 .media-buttons:hover {
   transform: scale(1.35, 1.35); }
+
+#home-main-image {
+  background-image: url("../img/login.jpg");
+  background-size: cover; }
+
+.row-adjust {
+  margin-left: 0px;
+  margin-right: 0px; }
+
+#home-school-logo {
+  height: 180px; }
+
+.home-images-circle {
+  width: 180px;
+  height: 180px; }

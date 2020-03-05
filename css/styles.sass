@@ -1,4 +1,6 @@
 $background-primary: #41C7D6
+$background-2-primary-transp: rgba(79,194,247,0.25)
+$background-2-primary: #4FC2F7
 $background-light: #7efaff
 $background-dark: #0092C4
 $background-pale: #F2F2F2
@@ -27,6 +29,14 @@ body
 .primary-color
     background-color: $background-primary
 
+.two-primary-color-transp
+    background-color: $background-2-primary-transp
+    //opacity: 0.2
+    //filter: alpha(opacity=20)
+
+.two-primary-color
+    background-color: $background-2-primary
+    
 .light-color
     background-color: $background-light
 
@@ -80,3 +90,17 @@ footer
 .media-buttons:hover
     transform: scale(1.35,1.35)
 
+#home-main-image
+    background-image: url('../img/login.jpg')
+    background-size: cover
+
+.row-adjust
+    margin-left: 0px
+    margin-right: 0px
+
+#home-school-logo
+    height: 180px
+
+.home-images-circle
+    width: 180px
+    height: 180px
