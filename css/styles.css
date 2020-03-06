@@ -95,3 +95,13 @@ footer {
 .home-images-circle {
   width: 180px;
   height: 180px; }
+
+.home-images-circle-services {
+  width: 180px;
+  height: 180px;
+  border: 8px solid honeydew; }
+
+.home-text-services {
+  background-color: honeydew;
+  border-radius: 30px;
+  margin-left: -5px; }

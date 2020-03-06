@@ -143,9 +143,9 @@ $(document).ready(function(){
         }else{
             $('#'+aux_global+'-title').html('<strong>'+data_json.books[aux_global].title+'</strong>');
         }
-        $('#'+aux_global+'-author').html('<strong>Author: </strong>'+data_json.books[aux_global].author);
-        $('#'+aux_global+'-edition').html('<strong>Edition: </strong>'+data_json.books[aux_global].edition);
-        $('#'+aux_global+'-copies').html('<strong>Available copies: </strong>'+data_json.books[aux_global].copies);
+        $('#'+aux_global+'-author').html(data_json.books[aux_global].author);
+        $('#'+aux_global+'-edition').html(data_json.books[aux_global].edition);
+        $('#'+aux_global+'-copies').html(data_json.books[aux_global].copies);
     }
 
 });
